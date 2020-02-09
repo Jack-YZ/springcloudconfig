@@ -6,14 +6,7 @@ spring:
 ---
 server:
   port: 8001
-  
-mybatis:
-  type-aliases-package: com.efunds.cloud.mapper
-  configuration:
-    map-underscore-to-camel-case: true
-    default-fetch-size: 100
-    default-statement-timeout: 3000
-    
+
 spring:
   profiles: dev
   application:
@@ -31,6 +24,14 @@ spring:
      max-wait-millis: 200                                  # 等待连接获取的最大超时时间
      pool-prepared-statements: true
      max-open-prepared-statements: 20
+  
+mybatis:
+  type-aliases-package: com.efunds.cloud.mapper
+  configuration:
+    map-underscore-to-camel-case: true
+    default-fetch-size: 100
+    default-statement-timeout: 3000
+    
 eureka:
   client:
     service-url:
@@ -49,14 +50,7 @@ info:
 ---
 server:
   port: 8001
-  
-mybatis:
-  type-aliases-package: com.efunds.cloud.mapper
-  configuration:
-    map-underscore-to-camel-case: true
-    default-fetch-size: 100
-    default-statement-timeout: 3000
-    
+
 spring:
   profiles: test
   application:
@@ -74,6 +68,14 @@ spring:
      max-wait-millis: 200                                  # 等待连接获取的最大超时时间
      pool-prepared-statements: true
      max-open-prepared-statements: 20
+  
+mybatis:
+  type-aliases-package: com.efunds.cloud.mapper
+  configuration:
+    map-underscore-to-camel-case: true
+    default-fetch-size: 100
+    default-statement-timeout: 3000
+    
 eureka:
   client:
     service-url:
