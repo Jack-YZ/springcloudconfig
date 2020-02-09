@@ -17,7 +17,7 @@ mybatis:
 spring:
   profiles: dev
   application:
-   name: springcloud-provider-8001
+   name: springcloud-config-dept-client
   datasource:
    type: com.alibaba.druid.pool.DruidDataSource            # 当前数据源操作类型
    driver-class-name: com.mysql.jdbc.Driver                # mysql驱动包
@@ -60,7 +60,7 @@ mybatis:
 spring:
   profiles: test
   application:
-   name: springcloud-provider-8001
+   name: springcloud-config-dept-client
   datasource:
    type: com.alibaba.druid.pool.DruidDataSource            # 当前数据源操作类型
    driver-class-name: com.mysql.jdbc.Driver                # mysql驱动包
